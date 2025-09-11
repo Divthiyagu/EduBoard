@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduBoard – Student Progress Dashboard</title>
+  <link rel="stylesheet" href="index.css" />
+
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar" aria-label="Sidebar Navigation">
+    <ul>
+      <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+      <li><a href="#"><i class="fas fa-book"></i> Subjects</a></li>
+      <li><a href="#"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+      <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+      <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <!-- Top Navbar (Header) -->
+    <header class="top-navbar">
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student Avatar" class="avatar"/>
+        <span class="name">John Doe</span>
+      </div>
+      <i class="fas fa-bell notification" aria-label="Notifications"></i>
+    </header>
+
+    <!-- Overview Cards Section -->
+    <section class="overview-cards">
+      <article class="card">
+        <h3>GPA</h3>
+        <p>8.9</p>
+      </article>
+      <article class="card">
+        <h3>Attendance</h3>
+        <p>95%</p>
+      </article>
+      <article class="card">
+        <h3>Assignments Due</h3>
+        <p>2</p>
+      </article>
+      <article class="card">
+        <h3>Total Credits</h3>
+        <p>24</p>
+      </article>
+    </section>
+
+    <!-- Progress Table Section -->
+    <section class="progress-table-section">
+      <h2>Subject Progress</h2>
+      <table class="progress-table">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Completion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathematics</td>
+            <td>
+              <div class="progress-bar"><span class="progress" style="width: 90%"></span></div>
+              <span>90%</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td>
+              <div class="progress-bar"><span class="progress" style="width: 75%"></span></div>
+              <span>75%</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Chemistry</td>
+            <td>
+              <div class="progress-bar"><span class="progress" style="width: 80%"></span></div>
+              <span>80%</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Computer Science</td>
+            <td>
+              <div class="progress-bar"><span class="progress" style="width: 95%"></span></div>
+              <span>95%</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Upcoming Deadlines Section -->
+    <section class="deadlines-section">
+      <h2>Upcoming Deadlines</h2>
+      <ul>
+        <li>
+          <span class="date-badge">Sep 14</span>
+          <span>Math Assignment 3</span>
+        </li>
+        <li>
+          <span class="date-badge">Sep 16</span>
+          <span>Physics Lab Report</span>
+        </li>
+        <li>
+          <span class="date-badge">Sep 20</span>
+          <span>Chemistry Quiz</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Student Profile Info -->
+    <aside class="profile-card">
+      <h2>Student Profile</h2>
+      <ul>
+        <li><strong>Name:</strong> John Doe</li>
+        <li><strong>Roll No:</strong> 18001234</li>
+        <li><strong>Email:</strong> john.doe@example.com</li>
+        <li><strong>College:</strong> Globe University</li>
+        <li><strong>Department:</strong> Computer Science</li>
+      </ul>
+    </aside>
+  </div>
+</body>
+</html>
